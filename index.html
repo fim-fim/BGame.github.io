@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>げーみんぐぶらっきー</title>
+        <link rel="stylesheet" href="html.css">
+    </head>
+    <body>
+        <div id="screen">
+            <div id="main">
+                <img src="img/透過+トリミングGun.png" id="gun">
+                <audio src="ああああああああああ.mp3" id="goutouSe-kill"></audio>
+                <div id="guest">
+                    <img src="img/guestOne.png" id="guestOne">
+                    <img src="img/guestTwo.png" id="guestTwo">
+                    <img src="img/heist.png" id="heist">
+                </div>
+                <button type="button" id="gunBt">撃つ</button>
+                <input type="number" value="" id="price" placeholder="値段">
+                <button type="button" id="priceBt">お会計</button>
+                <div id="items">
+                    <div class="item" id="onigiri">
+                        <p class="product" id="onigiriProduct">おにぎり</p>
+                        <p class="priceMoney" id="onigiriPrice">200円</p>
+                        <button type="button" class="sellBt" id="onigiriSell">売りつける</button>
+                    </div>
+                    <div class="item" id="obentou">
+                        <p class="product" id="obentouProduct">おべんとう</p>
+                        <p class="priceMoney" id="obentouPrice">300円</p>
+                        <button type="button" class="sellBt" id="obentouSell">売りつける</button>
+                    </div>
+                    <div class="item" id="okasi">
+                        <p class="product" id="okasiProduct">おかし</p>
+                        <p class="priceMoney" id="okasiPrice">350円</p>
+                        <button type="button" class="sellBt" id="okasiSell">売りつける</button>
+                    </div>
+                    <div class="item" id="buraki">
+                        <p class="product" id="burakiProduct">ブラッキーのつの</p>
+                        <p class="priceMoney" id="burakiPrice">4000円</p>
+                        <button type="button" class="sellBt" id="burakiSell">売りつける</button>
+                    </div>
+                    <button type="button" id="backGuest">帰れ</button>
+                </div>
+            </div>
+            <div id="menu">
+                <p id="money">$</p>
+            </div>
+        </div>
+        <script src="html.js"></script>
+        <script src="product.js"></script>
+    </body>
+</html>
