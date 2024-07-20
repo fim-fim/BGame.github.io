@@ -4,6 +4,5 @@ const moneyUpdata = () =>{
     moneyData.textContent = "$"+money;
 }
 setInterval(moneyUpdata,500);
-console.log(money);
 
 
