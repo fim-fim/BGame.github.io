@@ -4,3 +4,6 @@ document.getElementById('priceBt').addEventListener('click',()=>{
     buyPrice(350,"おかし");
     buyPrice(4000,"ぶらっきーのつの");
 })
+if(document.getElementById('guestOne')==null&&document.getElementById('guestTwo')==null&&document.getElementById('heist')==null) {
+    
+}
