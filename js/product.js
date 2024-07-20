@@ -1,3 +1,11 @@
+const guests = (guestNumber) => {
+    let guestMember = ['guestOne','guestTwo','heist']
+    guestNumber = guestMember[Math.floor(Math.random()*guestMember.length)]
+    document.getElementById(guestNumber).style.display = 'block';
+    if (guestNumber == 'heist'){
+        document.getElementById('gunBt').style.display = 'block';
+    }
+}
 document.getElementById('onigiriSell').addEventListener('click',()=>{
     guests();
     document.getElementById('price').value = '200';
