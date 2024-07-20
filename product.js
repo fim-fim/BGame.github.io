@@ -14,3 +14,4 @@ document.getElementById('burakiSell').addEventListener('click',()=>{
     guests();
     document.getElementById('price').value = '4000';
 })
+console.log('はろー');
