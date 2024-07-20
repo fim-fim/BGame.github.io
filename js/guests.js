@@ -8,4 +8,6 @@ document.getElementById('priceBt').addEventListener('click',()=>{
 document.getElementById('backGuest').addEventListener('click',()=>{
     Guestreturn('guestOne');
     Guestreturn('guestTwo');
+    document.getElementById('price').type='text';
+    document.getElementById('price').value ='';
 })

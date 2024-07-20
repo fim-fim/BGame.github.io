@@ -4,21 +4,23 @@ const guests = (guestNumber) => {
     document.getElementById(guestNumber).style.display = 'block';
     if (guestNumber == 'heist'){
         document.getElementById('gunBt').style.display = 'block';
+        document.getElementById('price').value = '';
     }
+    document.getElementById('price').type = 'number';
 }
 document.getElementById('onigiriSell').addEventListener('click',()=>{
-    guests();
     document.getElementById('price').value = '200';
+    guests();
 })
 document.getElementById('obentouSell').addEventListener('click',()=>{
-    guests();
     document.getElementById('price').value = '300';
+    guests();
 })
 document.getElementById('okasiSell').addEventListener('click',()=>{
-    guests();
     document.getElementById('price').value = '350';
+    guests();
 })
 document.getElementById('burakiSell').addEventListener('click',()=>{
-    guests();
     document.getElementById('price').value = '4000';
+    guests();
 })
