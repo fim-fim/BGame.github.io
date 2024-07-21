@@ -9,14 +9,8 @@ const gunOpenClose = ()=>{
     }
     setTimeout(gunClose,2000);
     money += 1000;
+    document.getElementById('reportText').textContent = '強盗を撃ちました。money:+1000';
     document.getElementById('heist').style.display = 'none';
     document.getElementById('gunBt').style.display = 'none';
 }
 gunBt.addEventListener("click",gunOpenClose);
-const buyPrice = (itemPrice,item) => {
-    var price = document.getElementById('price');
-    if(price.value == itemPrice) {
-        alert(item+"を売った");
-        money += itemPrice;
-    } 
-}
