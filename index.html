@@ -7,10 +7,16 @@
     </head>
     <body>
         <div id="screen">
+            <div id="menuScreenBack">
+                <div id="menuScreen">
+                    
+                </div>
+            </div>
             <div id="main">
                 <img src="img/透過+トリミングGun.png" id="gun">
                 <audio src="mp3/ああああああああああ.mp3" id="goutouSe-kill"></audio>
                 <audio src="mp3/はろーきてぃー.mp3" id="minus"></audio>
+                <audio src="mp3/ｺﾞｳﾄｳﾀﾞｧｧｧｶﾈｦﾀﾞｾｪｪｪ.mp3" id="goutouSe"></audio>
                 <div id="guest">
                     <img src="img/guestOne.png" id="guestOne">
                     <img src="img/guestTwo.png" id="guestTwo">
@@ -24,6 +30,7 @@
                         <p class="product" id="onigiriProduct">おにぎり</p>
                         <p class="priceMoney" id="onigiriPrice">200円</p>
                         <button type="button" class="sellBt" id="onigiriSell">売りつける</button>
+                        <button type="button" class="NbuyBt" id="onigirimuri" disabled>売りつける</button>
                         <button type="button" class="buyBt" id="onigiribuy">商品を買う</button>
                         <p class="stockText" id="onigiriStock">0</p>
                     </div>
@@ -31,6 +38,7 @@
                         <p class="product" id="obentouProduct">おべんとう</p>
                         <p class="priceMoney" id="obentouPrice">300円</p>
                         <button type="button" class="sellBt" id="obentouSell">売りつける</button>
+                        <button type="button" class="NbuyBt" id="obentoumuri" disabled>売りつける</button>
                         <button type="button" class="buyBt" id="obentoubuy">商品を買う</button>
                         <p class="stockText" id="obentouStock">0</p>
                     </div>
@@ -38,22 +46,19 @@
                         <p class="product" id="okasiProduct">おかし</p>
                         <p class="priceMoney" id="okasiPrice">350円</p>
                         <button type="button" class="sellBt" id="okasiSell">売りつける</button>
+                        <button type="button" class="NbuyBt" id="okasimuri" disabled>売りつける</button>
                         <button type="button" class="buyBt" id="okasibuy">商品を買う</button>
                         <p class="stockText" id="okasiStock">0</p>
-                    </div>
-                    <div class="item" id="buraki">
-                        <p class="product" id="burakiProduct">ブラッキーのつの</p>
-                        <p class="priceMoney" id="burakiPrice">4000円</p>
-                        <button type="button" class="sellBt" id="burakiSell">売りつける</button>
-                        <button type="button" class="buyBt" id="burakibuy">商品を買う</button>
-                        <p class="stockText" id="burakiStock">0</p>
                     </div>
                     <button type="button" id="backGuest">帰れ</button>
                 </div>
             </div>
             <div id="menu">
                 <p id="money">$</p>
-                <h3 id="reportText"></h3>
+                <h3 id="reportText">「ここに報告が出てきます」</h3>
+                <div id="menuBt">
+                    <a href="#" id="menuOpen"></a>
+                </div>
             </div>
         </div>
         <script src="js/moneies.js"></script>

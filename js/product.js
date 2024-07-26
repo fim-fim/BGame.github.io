@@ -1,10 +1,15 @@
 const guests = (guestNumber) => {
-    let guestMember = ['guestOne','guestTwo','heist']
+    let guestMember = ['guestOne','guestTwo','heist','other']
     guestNumber = guestMember[Math.floor(Math.random()*guestMember.length)]
+    if(guestNumber == 'other') {
+        document.getElementById('guestOne').style.display = 'block';
+    }
     document.getElementById(guestNumber).style.display = 'block';
     if (guestNumber == 'heist'){
         document.getElementById('gunBt').style.display = 'block';
         document.getElementById('price').value = '';
+        var goutouSe = document.getElementById('goutouSe');
+        goutouSe.play();
     }
     document.getElementById('price').type = 'number';
 }
@@ -18,9 +23,5 @@ document.getElementById('obentouSell').addEventListener('click',()=>{
 })
 document.getElementById('okasiSell').addEventListener('click',()=>{
     document.getElementById('price').value = '350';
-    guests();
-})
-document.getElementById('burakiSell').addEventListener('click',()=>{
-    document.getElementById('price').value = '4000';
     guests();
 })
