@@ -87,13 +87,12 @@ body {
 }
 #guest {
     position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    margin: 0 auto;
+    bottom: 35%;
 }
 #guestOne,#guestTwo,#heist {
     display: none;
+    height: 50vh;
 }
 #onigiri,#obentou,#okasi{
     background-color: white;
