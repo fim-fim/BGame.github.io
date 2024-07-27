@@ -127,3 +127,29 @@ body {
     border: 2px solid dimgray;
     border-radius: 15px;
 }
+#menuClose {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 40px;
+    border: none;
+    background-color: white;
+    transition: all 0.5s;
+}
+#menuClose:hover {
+    background-color: gainsboro;
+    opacity: 0.6;
+}
+#menuClose:active {
+    opacity: 0.6;
+}
+#admin {
+    display: none;
+    z-index: 101;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: aliceblue;
+}
